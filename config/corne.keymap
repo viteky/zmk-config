@@ -94,10 +94,10 @@
 
         navigation_layer {
             bindings = <
-&kp  &kp  &kp  &kp  &kp  &kp    &kp PAGE_UP    &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_UNDO  &kp C_AC_REDO
-&kp  &kp  &kp  &kp  &kp  &kp    &kp HOME       &kp LEFT      &kp DOWN       &kp UP          &kp RIGHT      &kp END
-&kp  &kp  &kp  &kp  &kp  &kp    &kp PAGE_DOWN  &kp INSERT    &kp DELETE     &kp             &kp            &kp
-               &kp  &kp  &kp    &kp            &kp           &kp
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP    &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_UNDO  &kp C_AC_REDO
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME       &kp LEFT      &kp DOWN       &kp UP          &kp RIGHT      &kp END
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &kp INSERT    &kp DELETE     &trans          &trans         &trans
+                        &trans  &trans  &trans    &trans         &trans        &trans
             >;
 
             label = "NAVIGATION";
