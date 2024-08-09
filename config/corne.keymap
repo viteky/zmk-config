@@ -36,6 +36,8 @@
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 3  &kp RALT
             >;
+
+            label = "Default";
         };
 
         qwerty_layer {
@@ -77,6 +79,17 @@
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
+        };
+
+        number_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &trans
+                        &trans  &trans  &trans    &trans     &kp DOT       &trans
+            >;
+
+            label = "Number";
         };
     };
 };
