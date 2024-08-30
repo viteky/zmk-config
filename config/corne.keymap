@@ -18,6 +18,36 @@
             key-positions = <11 0>;
             layers = <0 6>;
         };
+
+        lpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <4 5>;
+        };
+
+        rpar {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <6 7>;
+        };
+
+        lbkt {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <16 17>;
+        };
+
+        rbkt {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <18 19>;
+        };
+
+        rbrc {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <30 31>;
+        };
+
+        lbrc {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <28 29>;
+        };
     };
 
     keymap {
