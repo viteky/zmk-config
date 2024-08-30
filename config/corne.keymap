@@ -31,10 +31,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B          &kp J        &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G          &kp M        &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V          &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 2  &lt 1 SPACE    &lt 4 ENTER  &mo 5  &mo 3
+&kp TAB    &kp Q           &kp W           &kp F               &kp P             &kp B          &kp J        &kp L              &kp U                &kp Y            &kp SEMI         &kp BSPC
+&kp LCTRL  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp SQT
+&kp LSHFT  &kp Z           &kp X           &kp C               &kp D             &kp V          &kp K        &kp H              &kp COMMA            &kp DOT          &kp FSLH         &kp ESC
+                                           &kp LGUI            &lt 2 TAB         &lt 1 SPACE    &lt 4 ENTER  &lt 5 BACKSPACE    &lt 3 DELETE
             >;
 
             label = "BASE";
