@@ -157,10 +157,10 @@
 
         qwerty_layer {
             bindings = <
-&trans  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
-&trans  &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp Q            &kp W            &kp E                &kp R              &kp T     &kp Y   &kp U               &kp I                 &kp O             &kp P                &trans
+&trans  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G     &kp H   &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMI  &kp APOS
+&trans  &kp Z            &kp X            &kp C                &kp V              &kp B     &kp N   &kp M               &kp COMMA             &kp DOT           &kp FSLH             &trans
+                                          &trans               &trans             &trans    &trans  &trans              &trans
             >;
 
             label = "QWERTY";
