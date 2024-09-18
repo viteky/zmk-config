@@ -78,6 +78,13 @@
             tapping-term-ms = <280>;
             require-prior-idle-ms = <150>;
         };
+
+        shift_caps: shift_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHIFT_CAPS";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+        };
     };
 
     keymap {
@@ -91,10 +98,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J        &kp L               &kp U                 &kp Y             &kp SEMI          &kp BSPC
-&kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G        &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SQT
-&kp LSHFT  &kp Z            &kp X            &kp C                &kp D              &kp V        &kp K        &kp H               &kp COMMA             &kp DOT           &kp FSLH          &kp ESC
-                                             &kp ESCAPE           &lt 2 SPACE        &lt 1 TAB    &lt 4 ENTER  &lt 5 BACKSPACE     &lt 3 DELETE
+&kp TAB      &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J        &kp L               &kp U                 &kp Y             &kp SEMI          &kp BSPC
+&kp LCTRL    &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G        &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SQT
+&shift_caps  &kp Z            &kp X            &kp C                &kp D              &kp V        &kp K        &kp H               &kp COMMA             &kp DOT           &kp FSLH          &kp ESC
+                                               &kp ESCAPE           &lt 2 SPACE        &lt 1 TAB    &lt 4 ENTER  &lt 5 BACKSPACE     &lt 3 DELETE
             >;
 
             label = "BASE";
@@ -146,10 +153,10 @@
 
         function_layer {
             bindings = <
-&kp F15  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &kp  &kp  &kp  &kp  &kp  &kp
-&kp F14  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &kp  &kp  &kp  &kp  &kp  &kp
-&kp F13  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &kp  &kp  &kp  &kp  &kp  &kp
-                          &kp     &kp     &kp                &kp  &kp  &kp
+&kp F15  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &trans  &trans  &trans  &trans  &trans  &trans
+&kp F14  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &trans  &trans  &trans  &trans  &trans  &trans
+&kp F13  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans  &trans  &trans             &trans  &trans  &trans
             >;
 
             label = "FUNC";
