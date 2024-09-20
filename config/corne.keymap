@@ -102,7 +102,7 @@
 &kp TAB      &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J        &kp L               &kp U                 &kp Y             &kp SEMI          &kp BSPC
 &kp LCTRL    &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G        &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SQT
 &shift_caps  &kp Z            &kp X            &kp C                &kp D              &kp V        &kp K        &kp H               &kp COMMA             &kp DOT           &kp FSLH          &kp ESC
-                                               &kp ESCAPE           &lt 2 SPACE        &lt 1 TAB    &lt 4 ENTER  &lt 5 BACKSPACE     &lt 3 DELETE
+                                               &lt 8 ESCAPE           &lt 2 SPACE        &lt 1 TAB    &lt 4 ENTER  &lt 5 BACKSPACE     &lt 3 DELETE
             >;
 
             label = "BASE";
@@ -184,5 +184,17 @@
 
             label = "GAME";
         };
+
+        mouse_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP    &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_UNDO  &kp C_AC_REDO
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME       &mmv MOVE_LEFT      &mmv MOVE_DOWN       &mmv MOVE_UP          &mmv MOVE_RIGHT      &kp END
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &kp INSERT    &none          &none           &none          &trans
+                        &trans  &trans  &trans    &trans         &trans        &trans
+            >;
+
+            label = "MOUSE";
+        };
+
     };
 };
