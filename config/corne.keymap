@@ -96,11 +96,6 @@
         compatible = "zmk,keymap";
 
         base_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
 &kp TAB      &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J        &kp L               &kp U                 &kp Y             &kp SEMI          &kp BSPC
@@ -138,7 +133,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY   &kp C_AC_CUT  &kp C_AC_UNDO    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &mkp MB5       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4       &none           &none           &none         &none            &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
                         &trans  &trans  &trans    &mkp MB1       &mkp MB3        &mkp MB2
             >;
 
