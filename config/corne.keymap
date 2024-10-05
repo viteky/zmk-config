@@ -96,7 +96,6 @@
         compatible = "zmk,keymap";
 
         base_layer {
-
             bindings = <
 &kp TAB      &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J        &kp L               &kp U                 &kp Y             &kp SEMI          &kp BSPC
 &kp LCTRL    &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G        &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SQT
@@ -164,7 +163,7 @@
 
         media_layer {
             bindings = <
-&trans  &trans  &none   &trans  &trans  &trans    &trans        &trans            &kp C_BRI_DN  &kp C_BRI_UP  &trans        &trans
+&trans  &tog 0  &tog 7  &tog 8  &trans  &trans    &trans        &trans            &kp C_BRI_DN  &kp C_BRI_UP  &trans        &trans
 &none   &trans  &none   &trans  &trans  &trans    &out OUT_TOG  &kp C_PREVIOUS    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
                         &trans  &trans  &trans    &kp C_STOP    &kp C_PLAY_PAUSE  &kp C_MUTE
@@ -186,13 +185,24 @@
 
         gaming_layer {
             bindings = <
-&kp N5  &kp N6  &kp Q  &kp W      &kp E      &kp R             &trans  &trans  &trans  &trans  &trans  &trans
-&kp N3  &kp N4  &kp A  &kp S      &kp D      &kp F             &trans  &trans  &trans  &trans  &trans  &trans
-&kp N1  &kp N2  &kp Z  &kp X      &kp C      &kp V             &trans  &trans  &trans  &trans  &trans  &trans
-                       &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT    &trans  &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B    &trans  &trans  &trans  &trans  &trans  &trans
+                         &kp LALT  &kp SPACE  &to 9    &trans  &trans  &trans
             >;
 
             label = "GAME";
+        };
+
+        game_ext {
+            bindings = <
+&kp N1  &kp N2  &trans  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "GAME EXT";
         };
     };
 };
