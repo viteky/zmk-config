@@ -66,6 +66,7 @@
             hold-trigger-on-release;
             tapping-term-ms = <280>;
             require-prior-idle-ms = <150>;
+            hold-while-undecided;
         };
 
         hmr: hmr {
@@ -80,6 +81,7 @@
             hold-trigger-on-release;
             tapping-term-ms = <280>;
             require-prior-idle-ms = <150>;
+            hold-while-undecided;
         };
     };
 
